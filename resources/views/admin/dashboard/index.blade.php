@@ -42,7 +42,7 @@
           <img src="../assets/img/backgrounds/2.jpg" alt="Slide 2">
           <img src="../assets/img/backgrounds/3.webp" alt="Slide 3">
           <img src="../assets/img/backgrounds/4.jpg" alt="Slide 4">
-          <img src="../assets/img/backgrounds/sports-tools.jpg" alt="Slide 5">
+          <img src="../assets/img/backgrounds/sports.jpg" alt="Slide 5">
         </div>
       </div>
 

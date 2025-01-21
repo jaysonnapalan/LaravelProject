@@ -1,6 +1,3 @@
-@extends('layouts.app')
-
-@section('content')
 <div class="container mt-2">
     <h3>Edit Athlete Details</h3>
 
@@ -47,11 +44,21 @@
 
         <div class="mb-3">
             <label for="sport">Sport</label>
-            <input type="text" name="sport" class="form-control" value="{{ old('sport', $athlete->sport) }}" required>
+            <select class="form-select" id="sport" name="sport" required>
+                <option value="" disabled {{ old('sport', $athlete->sport) ? '' : 'selected' }}>Select Sports</option>
+                <option value="baseball" {{ old('sport', $athlete->sport) == 'Baseball' ? 'selected' : '' }}>Baseball</option>
+                <option value="Volleyball" {{ old('sport', $athlete->sport) == 'Volleyball' ? 'selected' : '' }}>Volleyball</option>
+                <option value="Basketball" {{ old('sport', $athlete->sport) == 'Basketball' ? 'selected' : '' }}>Basketball</option>
+                <option value="Badminton" {{ old('sport', $athlete->sport) == 'Badminton' ? 'selected' : '' }}>Badminton</option>
+                <option value="Swimming" {{ old('sport', $athlete->sport) == 'Swimming' ? 'selected' : '' }}>Swimming</option>
+                <option value="Shot put" {{ old('sport', $athlete->sport) == 'Shot put' ? 'selected' : '' }}>Shot put</option>
+                <option value="Runs" {{ old('sport', $athlete->sport) == 'Runs' ? 'selected' : '' }}>Runs</option>
+                <option value="Javelin throw" {{ old('sport', $athlete->sport) == 'Javelin throw' ? 'selected' : '' }}>Javelin throw</option>
+            </select>
         </div>
+
 
         <button type="submit" class="btn btn-warning mt-2">Update Info</button>
     </form>
 </div>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-@endsection

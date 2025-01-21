@@ -44,7 +44,7 @@ class SportsController extends Controller
         $athlete->update($request->all());
 
         // Redirect with success message
-        return redirect()->route('athletes.list')->with('success', 'Athlete updated successfully.');
+        return redirect()->route('athletes.list')->with('success', "Athlete's info updated successfully.");
     }
 
 
@@ -58,7 +58,7 @@ class SportsController extends Controller
         $athlete->delete();
 
         // Redirect back with a success message
-        return redirect()->route('athletes.list')->with('success', 'Athlete deleted successfully.');
+        return redirect()->route('athletes.list')->with('success', "Athlete's info deleted successfully.");
     }
 
 

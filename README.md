@@ -1,4 +1,4 @@
-Sports Registration System
+Sports Event Registration
 
 This application is a simple web-based system for managing athlete registrations for various sports events.
 
